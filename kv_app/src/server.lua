@@ -5,7 +5,7 @@ local server = {}
 
 server.start = function(config)
     box.cfg {
-        listen = config.tarantool_port,
+        listen = config.tarantool_port
     }
 
     local http_kv_server = http_server.new('0.0.0.0', config.http_port)
