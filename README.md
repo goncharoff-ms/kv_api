@@ -1,4 +1,4 @@
-## Tarantool HTTP-KV
+## Tarantool HTTP-KV (http://194.32.248.71/kv)
 The application presents a key-value store running over http and is deployed on port: `8080`. Tests are also run during startup. They work in a separate service.
 ### Launch
 ```sh
