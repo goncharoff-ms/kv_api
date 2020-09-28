@@ -1,12 +1,8 @@
 version: '3'
 services:
   kv_server:
-    entrypoint: tarantool app.lua
+    command: tarantool app.lua
     build:
       context: kv_app
     ports:
       - "8080:8080"
-  kv_server_test:
-    entrypoint: tarantool test/http_test.lua
-    build:
-      context: kv_app
