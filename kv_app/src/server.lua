@@ -8,7 +8,7 @@ server.start = function(config)
         listen = config.tarantool_port
     }
 
-    local http_kv_server = http_server.new('0.0.0.0', config.http_port)
+    local http_kv_server = http_server.new('localhost', config.http_port)
 
     kv:init(http_kv_server)
 
