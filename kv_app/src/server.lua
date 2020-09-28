@@ -6,8 +6,6 @@ local server = {}
 server.start = function(config)
     box.cfg {
         listen = config.tarantool_port,
-        memtx_max_tuple_size = config.memtx_max_tuple_size,
-        memtx_memory = config.memtx_memory
     }
 
     local http_kv_server = http_server.new('0.0.0.0', config.http_port)

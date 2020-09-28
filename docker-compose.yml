@@ -1,6 +1,9 @@
 version: '3'
 services:
   kv_server:
+    environment:
+      - TARANTOOL_MEMTX_MEMORY=100435456
+      - TARANTOOL_MEMTX_MAX_TUPLE_SIZE=108576
     command: tarantool app.lua
     build:
       context: kv_app
