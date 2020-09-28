@@ -5,4 +5,7 @@ local config = {
     memtx_memory = 100 * 1024 * 1024
 }
 
+print("<!Config!>")
+print(config)
+
 return config
